@@ -1,0 +1,13 @@
+<% include partials/header %>
+
+<h2>Enter a New Campsite</h2>
+<a href="/campsites">Go Back</a>
+<form action="/campsites" method="POST">
+  <input type="text" name="name" placeholder="Name"><br>
+  <input type="text" name="location" placeholder="Location"><br>
+  <input type="text" name="image" placeholder="Image URL"><br>
+  <textarea name="desc" placeholder="Description" rows=8 cols=80></textarea> <br>
+  <button>Submit</button>
+</form>
+
+<% include partials/footer %>
